@@ -17,7 +17,7 @@ def read_last(lines, file):
     with open(file, 'r', encoding='utf-8') as file:
         text = file.read().splitlines()
         for el in range(len(text) - lines, len(text)):
-            print(text)
+            print(text[el])
 
 lines = int(input('Введите количество строк: ', ))
 read_last(lines, 'article.txt')
